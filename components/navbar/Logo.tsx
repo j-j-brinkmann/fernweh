@@ -6,6 +6,7 @@ import { Lobster } from "next/font/google";
 
 const lobster = Lobster({
   subsets: ["latin"],
+  variable: "--font-lobster",
   weight: ["400"],
 });
 
@@ -18,7 +19,7 @@ function Logo() {
         </Link>
       </Button>
       <Link href="/" className="flex">
-        <span className={`${lobster.className} mx-1.5 mt-0.5 text-2xl`}>
+        <span className={`${lobster.variable} mx-1.5 mt-0.5 text-2xl`}>
           Fernweh
         </span>
       </Link>
