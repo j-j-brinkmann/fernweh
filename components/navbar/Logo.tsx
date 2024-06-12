@@ -4,11 +4,11 @@ import { FaPaperPlane } from "react-icons/fa";
 import { Button } from "../ui/button";
 import { Lobster } from "next/font/google";
 
-const lobster = Lobster({
-  subsets: ["latin"],
-  variable: "--font-lobster",
-  weight: ["400"],
-});
+// const lobster = Lobster({
+//   subsets: ["latin"],
+//   variable: "--font-lobster",
+//   weight: ["400"],
+// });
 
 function Logo() {
   return (
@@ -19,9 +19,8 @@ function Logo() {
         </Link>
       </Button>
       <Link href="/" className="flex">
-        <span className={`${lobster.variable} mx-1.5 mt-0.5 text-2xl`}>
-          Fernweh
-        </span>
+        {/* <span className={`${lobster.variable} mx-1.5 mt-0.5 text-2xl`}> */}
+        <span className={`mx-1.5 mt-0.5 text-2xl`}>Fernweh</span>
       </Link>
     </div>
   );
